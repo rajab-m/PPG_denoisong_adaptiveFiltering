@@ -48,3 +48,4 @@ Recursive Least Squares (RLS) adaptive filtering algorithm.
 ---
 
 ## Pipeline Flow
+Main_ppg → hr_estimate → adaptive_filtering_and_HR_detection → (LMS / NLMS / RLS)
