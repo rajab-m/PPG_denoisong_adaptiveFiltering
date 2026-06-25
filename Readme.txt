@@ -1,52 +1,49 @@
-# PPG Heart Rate Estimation Project
+# PPG Heart Rate Estimation
 
-## Overview
-This project estimates heart rate from PPG signals using adaptive filtering and signal processing techniques.  
-The pipeline includes bandpass filtering, adaptive noise cancellation, and peak-based heart rate detection.
+## Description
+This project implements heart rate estimation from PPG signals using adaptive filtering and signal processing techniques. Accelerometer signals are used as a noise reference for motion artifact reduction.
 
 ---
 
 ## Main Script: `Main_ppg`
-Running this script generates **22 figures**, showing:
+This is the main script of the project. Running it generates 22 figures representing:
 - Filtered signals
 - Estimated heart rates
-- Final evaluation results
+- Final results
 
-The selected algorithm can be specified in **line 11**.
+The selected algorithm can be set in line 11.
 
 ---
 
-## Core Function: `hr_estimate`
-This function implements the full heart rate estimation pipeline described in the report.
-
-### Steps included:
-- Bandpass filtering  
-- Adaptive filtering  
-- Heart rate detection  
-- Heart rate validation  
+## Function: `hr_estimate`
+This function implements the full heart rate estimation pipeline described in the report, including:
+- Bandpass filtering
+- Adaptive filtering
+- Heart rate detection
+- Heart rate validation
 
 ---
 
 ## Function: `adaptive_filtering_and_HR_detection`
-This function estimates heart rate from the adaptively filtered PPG signal using the **dominant frequency peak**.
+This function estimates heart rate from the adaptively filtered PPG signal using the highest peak frequency.
 
-### Differences from `hr_estimate`:
-- No heart rate validation  
-- No failure handling of adaptive filtering  
-- Only adaptive filtering + peak detection  
+Differences from `hr_estimate`:
+- No heart rate validation
+- No failure handling of adaptive filtering
+- Only adaptive filtering + peak detection
 
 ---
 
-## Adaptive Filtering Methods
+## Adaptive Filtering Algorithms
 
 ### `lms_filtering`
-Implements the Least Mean Squares (LMS) algorithm.
+Least Mean Squares (LMS) adaptive filtering algorithm.
 
 ### `nlms`
-Implements the Normalized Least Mean Squares (NLMS) algorithm.
+Normalized Least Mean Squares (NLMS) adaptive filtering algorithm.
 
 ### `rls_ppg`
-Implements the Recursive Least Squares (RLS) algorithm.
+Recursive Least Squares (RLS) adaptive filtering algorithm.
 
 ---
 
