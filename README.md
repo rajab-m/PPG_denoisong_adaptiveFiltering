@@ -50,7 +50,25 @@ Recursive Least Squares (RLS) adaptive filtering algorithm.
 Main_ppg → hr_estimate → adaptive_filtering_and_HR_detection → (LMS / NLMS / RLS)
 
 
-![Alt text](acc_ref.png)
-![Alt text](rls_filtering_example.png)
-![Alt text](adaptiveFilters.png)
+## Accelerometer Reference Signal
+
+![Accelerometer Reference](acc_ref.png)
+
+The accelerometer signal is used as a noise reference for the adaptive filter. Motion artifacts in the PPG signal are often correlated with body movements captured by the accelerometer. This relationship allows the adaptive filter to estimate and suppress motion-induced noise.
+
+---
+
+## Adaptive Filtering Framework
+
+![Adaptive Filtering Framework](adaptiveFilters.png)
+
+Adaptive filtering paradigm used in this project. The corrupted PPG signal and the accelerometer reference signal are provided as inputs to the adaptive filter, which estimates the noise component and removes it to recover a cleaner PPG signal.
+
+---
+
+## RLS Filtering Example
+
+![RLS Filtering Example](rls_filtering_example.png)
+
+Example of Recursive Least Squares (RLS) filtering applied to the corrupted PPG signal. The figure illustrates the capability of the RLS algorithm to suppress motion artifacts while preserving the heart-rate-related information.
 
