@@ -50,7 +50,7 @@ Recursive Least Squares (RLS) adaptive filtering algorithm.
 Main_ppg → hr_estimate → adaptive_filtering_and_HR_detection → (LMS / NLMS / RLS)
 
 
-![Alt text](PPG_denoisong_adaptiveFiltering/acc_ref.jpg)
-![Alt text](PPG_denoisong_adaptiveFiltering/rls_filtering_example.jpg)
-![Alt text](PPG_denoisong_adaptiveFiltering/adaptiveFilters.jpg)
+![Alt text](PPG_denoisong_adaptiveFiltering/acc_ref.png)
+![Alt text](PPG_denoisong_adaptiveFiltering/rls_filtering_example.png)
+![Alt text](PPG_denoisong_adaptiveFiltering/adaptiveFilters.png)
 
