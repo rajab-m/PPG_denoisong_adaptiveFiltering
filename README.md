@@ -70,7 +70,7 @@ Adaptive filtering paradigm used in this project. The corrupted PPG signal and t
 
 ![RLS Filtering Example](rls_filtering_example.png)
 
-Example of Recursive Least Squares (RLS) filtering applied to the corrupted PPG signal. The figure illustrates the capability of the RLS algorithm to suppress motion artifacts while preserving the heart-rate-related information.
+Example of Recursive Least Squares (RLS) filtering applied to the corrupted PPG signal. The figure illustrates the capability of the RLS algorithm to suppress motion artifacts while preserving the heart-rate-related information, the ppg signal here is 8 seconds long.
 
 ## Long-Duration Heart Rate Estimation (300 s)
 
