@@ -59,7 +59,7 @@ for i=1:num_datasets
         plot(time, corrupted_hr, 'LineWidth', 3);   % corrupted ppg HR
         xlabel('Time (s)', 'FontSize', fsize)
         ylabel('BPM', 'FontSize', fsize)
-        legend('ground truth', 'after', 'before')
+        legend('ground truth', 'after', 'before', 'Location', 'bestoutside')
         set(gca, 'FontSize', fsize)
 
 end
