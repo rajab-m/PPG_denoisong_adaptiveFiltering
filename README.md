@@ -11,7 +11,6 @@ This is the main script of the project. Running it generates 22 figures represen
 - Estimated heart rates
 - Final results
 
-The selected algorithm can be set in line 11.
 
 ---
 
