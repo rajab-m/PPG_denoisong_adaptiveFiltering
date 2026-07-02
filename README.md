@@ -15,7 +15,7 @@ This is the main script of the project. Running it generates 22 figures represen
 ---
 
 ## Function: `hr_estimate`
-This function implements the full heart rate estimation pipeline described in the report, including:
+This function implements the full heart rate estimation pipeline, including:
 - Bandpass filtering
 - Adaptive filtering
 - Heart rate detection
